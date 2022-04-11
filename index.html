@@ -4,16 +4,65 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Clone Binance Home</title>
   <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
   <div id="app" class="app">
+
+    <div class="header">
+
+      <div class="menubox">
+
+        <div class="logobox">
+          <div class="logo-img"></div>
+          <div class="logo-text">Binance</div>
+        </div>
+
+        <div class="menu">
+          <componentmenuitem v-for="(item, key ) in menuItems" :item="item" key="key"></componentmenuitem>
+        </div>
+
+      </div>
+
+      <div class="setting">
+        <componentsettingitem v-for="(item, key ) in settingItems" :item="item" key="key"></componentsettingitem>
+      </div>
+
+    </div>
+
+    <div class="pagebox">
+
+      <div class="presentation">
+
+        <div class="infosbox">
+  
+          <div class="infos">Buy, trade, and hold 600+ cryptocurrencies on Binance</div>
+  
+          <div class="contact">
+            <input type="email" class="email" placeholder="Email/Phone Number"/>
+            <div class="get-started">Get Started</div>
+          </div>
+  
+        </div>
+  
+      </div>
+  
+      <div class="bilanbox">
+        <componentbilanitem v-for="(item, key ) in bilanItems" :item="item" key="key"></componentbilanitem>
+      </div>
+  
+      <div class="marketbox">
+        <div class="markettitle">Market trend <span>View more markets ></span></div>
+        <table></table>
+      </div>
     
+    </div>
+
   </div>
 
 
   <script src="./js/vue@3.js"></script>
-  <script src="./js/app.js"></script>
+  <script src="./js/app.js" type="module" ></script>
 </body>
 </html>
