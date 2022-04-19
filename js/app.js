@@ -51,11 +51,7 @@ Vue.createApp({
   data() {
     return {
       menuItems: [
-        {text: "...", span:"", options:{}},
-        {text: "Buy Crypto", span:"EUR", options:{}},
         {text: "Markets", span:"", options:{}},
-        {text: "Trade", span:"", options:{}},
-        {text: "Derivatives", span:"", options:{}},
         {text: "Earn", span:"", options:{}},
         {text: "Finance", span:"", options:{}},
         {text: "NFT", span:"New", options:{}}
@@ -64,9 +60,7 @@ Vue.createApp({
         {text: "Log In", type:""},
         {text: "Register", type:"btn"},
         {text: "Downloads", type:""},
-        {text: "English |", type:""},
-        {text: "USD |", type:""},
-        {text: "C", type:"swicth"},
+        {text: "English", type:""},
       ],
       bilanItems: [
         {title: "$76 billion", description:"24h trading volume on Binance exchange"},
