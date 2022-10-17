@@ -1,68 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clone Binance Home</title>
-  <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-  <div id="app" class="app">
+<html lang="fr">
 
-    <div class="header">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="JavaScript Enginer">
+    <meta name="description" content="Full Stack JavaScript Enginer | Web, Mobile & Software">
+    <title>Link</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
 
-      <div class="menubox">
+  <body>
 
-        <div class="logobox">
-          <div class="logo-img"></div>
-          <div class="logo-text">Binance</div>
-        </div>
+    <header>
+      <img src="./images/IMG_20220414_083526_888.jpg" alt="profil"/>
+      <h1>I AM KEPO</h1>
+      <h2>KAKPO Christ-Amour Dieu-Merci</h2>
+      <p>Full Stack JavaScript Enginer | Web, Mobile & Software</p>
+    </header>
 
-        <div class="menu">
-          <componentmenuitem v-for="(item, key ) in menuItems" :item="item" key="key"></componentmenuitem>
-        </div>
+    <nav>
+      <a href="https://iamkepo.github.io/portfolio/"> 
+        <h3>My Portfolio</h3>
+      </a>
+      <a href="https://pixelswar.herokuapp.com/"> 
+        <h3>My Game: Pixel's War</h3>
+      </a>
+      <a href="https://zappe.herokuapp.com/"> 
+        <h3>My E-service: Zappe</h3>
+      </a>
+      <a href="https://iamkepo.github.io/portfolio/#/socials"> 
+        <h3>Me Contacter</h3>
+      </a>
+    </nav>
 
-      </div>
+    <footer>copyright 2022</footer>
 
-      <div class="setting">
-        <componentsettingitem v-for="(item, key ) in settingItems" :item="item" key="key"></componentsettingitem>
-      </div>
+    <script src="./js/script.js"></script>
 
-    </div>
+  </body>
 
-    <div class="pagebox">
-
-      <div class="presentation">
-
-        <div class="infosbox">
-  
-          <div class="infos">Buy, trade, and hold 600+ cryptocurrencies on Binance</div>
-  
-          <div class="contact">
-            <input type="email" class="email" placeholder="Email/Phone Number"/>
-            <div class="get-started">Get Started</div>
-          </div>
-  
-        </div>
-  
-      </div>
-  
-      <div class="bilanbox">
-        <componentbilanitem v-for="(item, key ) in bilanItems" :item="item" key="key"></componentbilanitem>
-      </div>
-  
-      <!-- <div class="marketbox">
-        <div class="markettitle">Market trend <span>View more markets ></span></div>
-        <table></table>
-      </div> -->
-    
-    </div>
-
-  </div>
-
-
-  <script src="./js/vue@3.js"></script>
-  <script src="./js/app.js" type="module" ></script>
-</body>
 </html>
